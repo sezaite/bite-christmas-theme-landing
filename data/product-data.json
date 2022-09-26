@@ -1,0 +1,69 @@
+[
+  {
+    "image": {
+      "url": "assets/images/products/mobile-phones-card.png",
+      "alt": "This is a picture of a product"
+    },
+    "title": "Išmanieji telefonai",
+    "cta": {
+      "link": "https://bite.lt/kompiuteriai",
+      "text": "Rinktis"
+    }
+  },
+
+  {
+    "image": {
+      "url": "assets/images/products/iphones-card.png",
+      "alt": "Apple telefonai"
+    },
+    "title": "'Apple' telefonai",
+    "cta": {
+      "link": "https://bite.lt/televizoriai",
+      "text": "Rinktis"
+    }
+  },
+  {
+    "image": {
+      "url": "assets/images/products/tvs-card.png",
+      "alt": "Išmanieji televizoriai"
+    },
+    "title": "Išmanieji televizoriai",
+    "cta": {
+      "link": "https://bite.lt/televizoriai",
+      "text": "Rinktis"
+    }
+  },
+  {
+    "image": {
+      "url": "assets/images/products/smart-watches-card.png",
+      "alt": "Išmanieji laikrodžiai"
+    },
+    "title": "Išmanieji laikrodžiai",
+    "cta": {
+      "link": "https://bite.lt/televizoriai",
+      "text": "Rinktis"
+    }
+  },
+  {
+    "image": {
+      "url": "assets/images/products/laptops-card.png",
+      "alt": "Kompiuteriai"
+    },
+    "title": "Kompiuteriai",
+    "cta": {
+      "link": "https://bite.lt/televizoriai",
+      "text": "Rinktis"
+    }
+  },
+  {
+    "image": {
+      "url": "assets/images/products/robot-cleaners-card.png",
+      "alt": "Robotai-siurbliai"
+    },
+    "title": "Robotai-siurbliai",
+    "cta": {
+      "link": "https://bite.lt/televizoriai",
+      "text": "Rinktis"
+    }
+  }
+]
