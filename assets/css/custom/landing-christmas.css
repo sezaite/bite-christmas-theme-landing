@@ -197,7 +197,6 @@ h1 {
     }
 }
 
-
 .category_card > img {
     margin-top: -81px;
     height: 100%;
@@ -310,23 +309,6 @@ h1 {
     transition: all 0.3s ease-out;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .game-banner {
     position: relative;
     background-color: var(--white);
@@ -350,6 +332,14 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
+.game-banner:not(.game-banner--sticky) > .container {
+    max-height: 510px;
+}
+
+.game-banner:not(.game-banner--sticky).game-banner--collapsed > .container {
+    max-height: 0;
+}
+
 
 .game-banner .game-banner_content {
     padding-bottom: 48px;
@@ -366,8 +356,6 @@ h1 {
         height: 80px;
     }
 }
-
-
 
 .game-banner .game-banner-toggler h6{
     font-size: 24px;
@@ -459,8 +447,6 @@ h1 {
         transform: translateY(calc(100% - 98px));
     }
 }
-
-
 
 .game-banner.game-banner--sticky .game-banner-toggler h6{
     color: var(--white);
@@ -575,9 +561,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     flex: 1;
-    
 }
-
 
 @media (max-width: 992px) {
     .game-banner_content .game-banner_steps .game-banner_step {
@@ -585,7 +569,6 @@ h1 {
         text-align: start;
     }
 }
-
 
 .game-banner_content .game-banner_steps .game-banner_step .icon-wrap {
     display: flex;
@@ -652,40 +635,6 @@ h1 {
     }
 }
 
-/* when banner is larger than viewport height: */
-
-@media (max-height: 610px) {
-    /* .game-banner > .container {
-        max-height: calc(100vh - 101px);
-    }
-    .game-banner.game-banner--sticky .game-banner_content {
-        padding-top: 32px;
-    }
-    .game-banner.game-banner--sticky::after {
-        content: none;
-    }  */
-   
-}
-
-@media (max-height: 610px) and (max-width: 768px){
-    /* .game-banner_content .game-banner_steps .game-banner_step .icon-wrap {
-        width: 64px;
-        height: 64px;
-    }
-    .game-banner_content .button-wrap  {
-        margin-top: 20px;
-    }
-    .game-banner_content .game-banner_steps .game-banner_step h6 {
-        font-size: 20px;
-    }
-    .game-banner .game-banner_content h5 {
-        font-size: 18px;
-        margin-bottom: 21px;
-    } */
-}
-
-
-
 .features {
     max-width: 650px;
     margin-bottom: 70px;
@@ -695,15 +644,19 @@ h1 {
 
 @media (max-width: 992px) {
     .features {
+        max-width: 500px;
         margin-top: 26px;
         margin-bottom: 40px;
         gap: 15px;
     }
 }
 
-.features .feature {
-    
+@media (max-width: 576px) {
+    .features {
+        max-width: 350px;
+    }
 }
+
 
 .features .feature:nth-child(2) h5 {
     max-width: 206px;

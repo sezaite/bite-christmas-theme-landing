@@ -11,7 +11,7 @@
     </div>
 </section>
 <div class="game-banner game-banner--collapsed">
-<div class="game-banner-toggler">
+    <div class="game-banner-toggler">
         <div class="container">
             <h6>
                 Žaidimo taisyklės

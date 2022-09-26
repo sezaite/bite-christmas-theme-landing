@@ -7,6 +7,6 @@
     <title>Bitė Kalėdos</title>
     <link href="assets/css/base.css" rel="stylesheet">
     <link href="assets/css/theme/style.css" rel="stylesheet">
-    <link href="assets/css/custom/landing.css" rel="stylesheet">
+    <link href="assets/css/custom/landing-christmas.css" rel="stylesheet">
 </head>
 <body>

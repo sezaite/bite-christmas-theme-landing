@@ -11,11 +11,11 @@
             <?php include "partials/gameBannerContent.php"; ?>
         </div>
     </div>
-    
-    <div class="game-banner-arrow-toggler">
-
-    </div>  
+    <div class="game-banner-arrow-toggler"></div>  
 </div>
-    <script src="js/script.js"></script>
-</body>
+
+
+
+        <script src="js/script.js"></script>
+    </body>
 </html>
