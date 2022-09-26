@@ -24,7 +24,7 @@
             <h6>Laimėkite <span>1000€ </span>kasdien</h6>
         </div>
     </div>
-    <div class="button-wrap d-flex flex-column flex-sm-row justify-content-center">
+    <div class="button-wrap d-flex align-items-center flex-column flex-sm-row justify-content-center">
         <a class="btn btn-default btn--arrow" href="#">Registruokitės</a>
         <a class="btn btn-default btn--arrow btn--bordered btn--revert-color" href="#">Visi laimėjotai</a>
 </div>

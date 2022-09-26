@@ -6,9 +6,12 @@
             </h6>
         </div>
     </div>
-    <div class="container">
-        <?php include "partials/gameBannerContent.php"; ?>
+    <div class="white-wrap">
+        <div class="container">
+            <?php include "partials/gameBannerContent.php"; ?>
+        </div>
     </div>
+    
     <div class="game-banner-arrow-toggler">
 
     </div>  

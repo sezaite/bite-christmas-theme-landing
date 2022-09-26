@@ -74,7 +74,7 @@ h1 {
 
 @media (max-width: 992px) {
     .hero-section {
-        padding: 29px 0 46px 0;
+        padding: 46px 0 29px 0;
         height: 583px;
         background: url(../../images/christmas-hero-mobile.png) no-repeat 60% 100%;
         background-size: cover;
@@ -140,6 +140,7 @@ h1 {
     .hero-section h3 {
         font-size: 20px;
         line-height: 23px;
+        margin-top: 10px;
     }
 }
 
@@ -174,7 +175,7 @@ h1 {
 @media (max-width: 576px) {
     .category_card {
         padding: 18px;
-        max-width: 320px;
+        max-width: 375px;
         margin: 0 auto;
     }
 }
@@ -207,7 +208,7 @@ h1 {
 @media (max-width: 768px) {
     .category_card > img {
         max-height: 208px;
-        margin-top: -38px;
+        margin-top: -58px;
     }
 }
 
@@ -223,6 +224,12 @@ h1 {
 
 .toggle-client {
     margin-bottom: 118px;
+}
+
+@media (max-width: 576px) {
+    .toggle-client {
+        margin-bottom: 68px;
+    }
 }
 
 .toggle-client .nav-tab {
@@ -244,7 +251,7 @@ h1 {
 }
 @media (max-width: 375px) {
     .toggle-client .nav-tab {
-        width: 280px;
+        width: 100%;
     }
 }
 
@@ -270,11 +277,12 @@ h1 {
 
 .toggle-client .toggle-button-text {
     position: relative;
-   font-size: 14px;
-   font-weight: 600;
-   line-height: 38px;
-   text-decoration: none;
-   height: 38px;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 38px;
+    text-decoration: none;
+    height: 38px;
     width: 50%;
     text-align: center;
     z-index: 2;
@@ -326,9 +334,12 @@ h1 {
 
 }
 
-.game-banner > .container {
+.game-banner .white-wrap {
+    background-color: var(--white);
+}
+
+.game-banner > .container, .game-banner > .white-wrap > .container {
     height: 100%;
-    max-height: 510px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -338,6 +349,7 @@ h1 {
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
+
 
 .game-banner .game-banner_content {
     padding-bottom: 48px;
@@ -377,6 +389,12 @@ h1 {
     margin-bottom: 41px;
 }
 
+@media (max-width: 768px) {
+    .game-banner .game-banner_content h5 {
+        font-size: 20px;
+    }
+}
+
 .game-banner .game-banner-arrow-toggler {
     position: absolute;
     bottom: 1px;
@@ -410,22 +428,39 @@ h1 {
 
 .game-banner.game-banner--sticky {
    position: fixed;
+   max-height: 100vh;
+   overflow-y: auto;
    z-index: 20;
    bottom: 0;
    left: 0;
    right: 0;
    transition: all 0.4s ease-in-out;
+   padding-top: 30px;
+   background-color: transparent;
    transform: translateY(0);
+   box-shadow: none;
 }
 
 .game-banner.game-banner--sticky.game-banner--collapsed {
-    transform: translateY(calc(100% - 68px));
+    transform: translateY(calc(100% - 91px));
 }
 
 .game-banner.game-banner--sticky .game-banner-toggler {
     background-color: var(--green);
     height: 68px;
+    box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.47);
 }
+
+@media (max-width: 768px) {
+    .game-banner.game-banner--sticky .game-banner-toggler {
+        height: 78px;
+    }
+    .game-banner.game-banner--sticky.game-banner--collapsed {
+        transform: translateY(calc(100% - 98px));
+    }
+}
+
+
 
 .game-banner.game-banner--sticky .game-banner-toggler h6{
     color: var(--white);
@@ -444,6 +479,11 @@ h1 {
 .game-banner.game-banner--sticky .game-banner_content {
     padding-top: 122px;
 }
+@media (max-width: 768px) {
+    .game-banner.game-banner--sticky .game-banner_content {
+        padding-top: 82px;
+    }
+}
 
 .game-banner.game-banner--sticky .game-banner_content h5{
     display: block;
@@ -453,8 +493,7 @@ h1 {
     content: "";
     position: absolute;
     background: url(../../images/icons/xmas-banner-decor.svg) 50% no-repeat;
-
-    top: 85px;
+    top: 120px;
     left: 0;
     right: 0;
     height: 42px;
@@ -464,11 +503,12 @@ h1 {
     .game-banner.game-banner--sticky::after {
         height: 31px;
         background-size: cover;
+        top: 130px;
     }
 }
 
 .game-banner.game-banner.game-banner--sticky .game-banner-arrow-toggler {
-    top: 1px;
+    top: 31px;
     background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1811 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(0, 170, 20, 1)" d="M 0 0 C 451 0 451 494 903 494 L 903 494 L 903 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(0, 170, 20, 1)" d="M 900 494 C 1356 494 1356 0 1811 0 L 1811 0 L 1811 0 L 901 0 Z" stroke-width="0"></path> </svg>');
     transform: translate(-50%, -100%) rotate(180deg);
 }
@@ -498,6 +538,7 @@ h1 {
 @media (max-width: 576px) {
     .game-banner_content .button-wrap {
         gap: 17px;
+        margin-top: 33px;
     }
 }
 
@@ -611,6 +652,38 @@ h1 {
     }
 }
 
+/* when banner is larger than viewport height: */
+
+@media (max-height: 610px) {
+    /* .game-banner > .container {
+        max-height: calc(100vh - 101px);
+    }
+    .game-banner.game-banner--sticky .game-banner_content {
+        padding-top: 32px;
+    }
+    .game-banner.game-banner--sticky::after {
+        content: none;
+    }  */
+   
+}
+
+@media (max-height: 610px) and (max-width: 768px){
+    /* .game-banner_content .game-banner_steps .game-banner_step .icon-wrap {
+        width: 64px;
+        height: 64px;
+    }
+    .game-banner_content .button-wrap  {
+        margin-top: 20px;
+    }
+    .game-banner_content .game-banner_steps .game-banner_step h6 {
+        font-size: 20px;
+    }
+    .game-banner .game-banner_content h5 {
+        font-size: 18px;
+        margin-bottom: 21px;
+    } */
+}
+
 
 
 .features {
@@ -712,14 +785,15 @@ h1 {
     .user-menu .icon {
         width: 23px;
     }
+    .main-logo .icon {
+        height: 30px;
+        width: 60px;
+    }
 }
 
 @media (max-width: 576px) {
     .user-menu__item .user-menu__link {
        padding: 10px;
-    }
-    .main-logo .icon {
-        height: 30px;
     }
 }
 

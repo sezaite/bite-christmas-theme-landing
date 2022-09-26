@@ -54,7 +54,7 @@
                     </li>
                 </ul>
                
-                <div class="mobile-menu-toggler d-xl-none user-menu__link">
+                <div class="mobile-menu-toggler d-xl-none user-menu__link pr-0">
                     <svg id="mob-menu" class="icon icon-mob-menu" viewBox="0 0 23 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1a1 1 0 011-1h21a1 1 0 110 2H1a1 1 0 01-1-1zm0 7a1 1 0 011-1h21a1 1 0 110 2H1a1 1 0 01-1-1zm1 6a1 1 0 100 2h21a1 1 0 100-2H1z" fill="currentColor"></path></svg>
                 </div>
     

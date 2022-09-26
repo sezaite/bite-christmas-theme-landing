@@ -15,7 +15,7 @@
         <h1 class="text-center">Kalėdiniai pasiūlymai</h1>
         <?php include "partials/features.php"; ?>
         <div class="toggle-client">
-            <div class="toggle-button-wrapper nav-tab">
+            <div class="toggle-button-wrapper nav-tab d-flex align-items-center">
                 <a href="javascript:void(0)" class="toggle-button-text toggle-button__left active">Privatiems klientams</a>
                 <div class="toggle-button__slider"></div>
                 <a href="javascript:void(0)" class="toggle-button-text toggle-button__right">Verslo klientams</a>
